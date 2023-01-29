@@ -6,12 +6,12 @@ Dirge is a collection of foundation models for Natural Language Processing (NLP)
 
 ### XLM-RoBERTa Longformer
 
-**xlm-roberta-longformer** is a [Longformer](https://arxiv.org/abs/2004.05150) initialized with [XLM-RoBERTa](https://huggingface.co/xlm-roberta-base)'s weights without further pretraining. It is intended to be fine-tuned on a downstream task.
+**xlm-roberta-longformer** is a multilingual [Longformer](https://arxiv.org/abs/2004.05150) initialized with [XLM-RoBERTa](https://huggingface.co/xlm-roberta-base)'s weights without further pretraining. It is intended to be fine-tuned on a downstream task.
 
-| Model | Attention Window Size | Maximum Sequence Length | Languages |
-| --- | --- | --- | --- |
-| [base](https://huggingface.co/hyperonym/xlm-roberta-longformer-base-16384) | 256 | 16384 | 100 languages |
-| [large](https://huggingface.co/hyperonym/xlm-roberta-longformer-large-16384) | 512 | 16384 | 100 languages |
+| Model | attention_window | hidden_size | num_hidden_layers | model_max_length |
+| --- | --- | --- | --- | --- |
+| [base](https://huggingface.co/hyperonym/xlm-roberta-longformer-base-16384) | 256 | 768 | 12 | 16384 |
+| [large](https://huggingface.co/hyperonym/xlm-roberta-longformer-large-16384) | 512 | 1024 | 24 | 16384 |
 
 ## License
 
